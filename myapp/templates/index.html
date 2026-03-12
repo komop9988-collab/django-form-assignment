@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <style>
+
+.products{
+margin-top:60px;
+}
+
+.product-card{
+text-align:center;
+padding:20px;
+transition:0.35s;
+border-radius:10px;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.product-img{
+width:100%;
+max-width:260px;
+transition:0.35s;
+}
+
+.product-card:hover .product-img{
+transform:scale(1.08);
+}
+
+.product-title{
+font-size:22px;
+margin-top:15px;
+font-weight:600;
+}
+
+.product-price{
+color:#555;
+margin-bottom:10px;
+}
+
+.buy-btn{
+background:black;
+color:white;
+padding:8px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.buy-btn:hover{
+background:#333;
+}
+
+</style>
+<style>
+
+.product-card{
+transition:0.3s;
+}
+
+.product-card:hover{
+transform:scale(1.08);
+}
+
+.product-img{
+width:100%;
+max-width:300px;
+}
+
+.product-title{
+font-size:22px;
+margin-top:10px;
+}
+
+.product-price{
+color:#555;
+}
+
+</style>
+
+<!-- Banner -->
+<div style="width:100%; overflow:hidden;">
+<img src="https://sasom-products-bucket-prod.s3.ap-southeast-1.amazonaws.com/What's+Essentials-05.png"
+style="width:100%; height:auto;">
+
+</div>
+
+<div style="
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+font-size:40px;
+font-weight:bold;
+letter-spacing:3px;
+">
+ESSENTIAL
+</div>
+</div>
+
+
+<!-- หัวข้อ -->
+<div class="container products">
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="product-card">
+
+
+<img src="https://d2cva83hdk3bwc.cloudfront.net/fear-of-god-essentials-fleece-hoodie-heather-gray-fw24-2.jpg"
+class="product-img">
+
+<div class="product-title">Fear of God</div>
+
+<div class="product-price">ราคา 4290 บาท</div>
+
+<button class="buy-btn">Buy Now</button>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="product-card">
+
+<img src="https://d2cva83hdk3bwc.cloudfront.net/fear-of-god-essentials-fleece-hoodie-black-2.jpg"
+class="product-img">
+
+<div class="product-title">Fear of God</div>
+
+<div class="product-price">ราคา 2720 บาท</div>
+
+<button class="buy-btn">Buy Now</button>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="product-card">
+
+<img src="https://d2cva83hdk3bwc.cloudfront.net/fear-of-god-essentials-fleece-hoodie-light-heather-gray-2.jpg"
+class="product-img">
+
+<div class="product-title">Fear of God</div>
+
+<div class="product-price">ราคา 3890 บาท</div>
+
+<button class="buy-btn">Buy Now</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- โปรโมชัน -->
+<div class="container mt-5 text-center">
+
+<h3>Promotion 🔥</h3>
+
+<p>
+ซื้อครบ 10000 บาท ส่งฟรีทั่วประเทศ
+</p>
+
+</div>
+
+
+{% endblock %}

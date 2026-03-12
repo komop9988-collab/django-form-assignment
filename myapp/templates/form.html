@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
+
+<style>
+  body{
+    background: linear-gradient(135deg,#f5f7fa,#e4e9f2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-card{
+    max-width:600px;
+    margin:80px auto;
+    background:white;
+    padding:45px;
+    border-radius:15px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.form-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.form-title{
+    text-align:center;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:35px;
+}
+
+.form-control{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    transition:0.2s;
+}
+   
+.form-control:focus{
+    border-color:black;
+    box-shadow:none;
+}
+
+.btn-submit{
+    background:black;
+    color:white;
+    padding:10px 25px;
+    border:none;
+    border-radius:8px;
+    font-weight:500;
+    transition:0.2s;
+}
+
+.btn-submit:hover{
+    background:#333;
+    transform:scale(1.03);
+}
+
+.btn-reset{
+    background:#e74c3c;
+    color:white;
+    padding:10px 25px;
+    border:none;
+    border-radius:8px;
+}
+
+.btn-reset:hover{
+    background:#c0392b;
+}
+</style>
+
+<div class="container">
+
+<div class="form-card">
+
+<div class="form-title">
+สมัครสมาชิก ESSENTIAL
+</div>
+
+<form class="border-0">
+
+<div class="mb-3">
+<label class="form-label">ชื่อ-นามสกุล</label>
+<input type="text" class="form-control" placeholder="กรอกชื่อ-นามสกุล">
+</div>
+
+<div class="mb-3">
+<label class="form-label">อายุ</label>
+<input type="number" class="form-control" placeholder="กรอกอายุ">
+</div>
+
+<div class="mb-3">
+<label class="form-label">อีเมล</label>
+<input type="email" class="form-control" placeholder="example@email.com">
+</div>
+
+<div class="mb-3">
+<label class="form-label">เบอร์โทร</label>
+<input type="text" class="form-control" placeholder="08xxxxxxxx">
+</div>
+
+<div class="mt-4">
+<button class="btn btn-submit">ลงทะเบียน</button>
+<button type="reset" class="btn btn-danger">ล้างข้อมูล</button>
+</div>
+
+</form>
+
+</div>
+</div>
+
+{% endblock %}
